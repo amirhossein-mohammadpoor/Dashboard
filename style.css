@@ -1,0 +1,297 @@
+@font-face {
+    font-family: Shabnam;
+    src: url('Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    }
+
+    body {
+        margin: 0;
+        direction: rtl;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        font-family: Shabnam;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .panel {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+		padding-top:70px;
+    }
+
+    .panel .date {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .panel .date .text1 {
+        color: rgb(126, 96, 228);
+        font-size: 26pt;
+        text-align: center;
+    }
+
+    .panel .date .text2 {
+        color: rgb(126, 96, 228);
+        text-align: center;
+    }
+
+    .panel .user {
+        display: flex;
+        align-items: center;
+        margin-top:30px;
+        padding-right:50px;
+    }
+
+    .panel .user img {
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        margin-left:10px; 
+    }
+
+    .panel .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right:40px ;
+        padding-left:40px ;
+        margin-top:50px; 
+    }
+
+    .panel .nav .tab{
+        font-size:14pt;
+        color:rgb(181, 181, 181);
+        margin-bottom:20px; 
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    .panel .nav .tab i{
+        margin-left:5px; 
+    }
+
+    .panel .nav .tab .number{
+        color: white;
+        background-color:red;
+        border-radius:5px;
+        width: 20px;
+        text-align:center;
+        font-size:10pt;
+    }
+
+    .panel .nav .active{
+        color:rgb(126,96,228);
+    }
+
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: rgb(245, 245, 245);
+        width: 83vw;
+        height: 100vh;
+    }
+
+    .dashboard .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 13vh;
+        width: 100%;
+    }
+
+    .dashboard .header .card {
+        width: 19vw;
+        height: 100%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dashboard .header .card .right {
+        height: 100%;
+        width: 76vw;
+        background-color: white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .dashboard .header .card .left {
+        height: 100%;
+        width: 24vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .dashboard .header .card .left img {
+        transform: scale(0.9);
+        margin-bottom: 5px;
+    }
+
+    .dashboard .header .card .right .text1 {
+        color: rgb(181, 181, 181);
+    }
+
+    .dashboard .header .card .right .text2 {
+        font-size: 16pt;
+        font-weight: bold;
+    }
+
+    .dashboard .header .card .right .text3 {
+        color: rgb(181, 181, 181);
+    }
+
+    .dashboard .main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 45vh;
+        width: 100%;
+    }
+
+    .dashboard .main .right {
+        height: 100%;
+        width: 60.95vw;
+        border-radius: 5px;
+        background:linear-gradient(to bottom right,rgb(126,96,228),rgb(97,114,228));
+    }
+
+    .dashboard .main .left {
+        height: 100%;
+        width: 37.4vw;
+        margin-right: 30px;
+        border-radius: 5px;
+        padding:30px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard .main .left .header{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height:20%;
+    }
+
+    .dashboard .main .left .header .text{
+        border-bottom:2px rgb(126,96,228) solid;
+        padding:5px;
+        font-size:14pt;
+    }
+
+    .dashboard .main .left .header button{
+        font-size:12pt;
+        padding:8px;
+        background-color:white;
+        border-radius:5px;
+        border:1px gray solid;
+    }
+
+    .dashboard .main .left .main{
+        width:100%;
+        height:100%;
+    }
+
+    .dashboard .footer {
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .dashboard .footer .right {
+        height: 100%;
+        width: 60.95vw;
+        margin-left: 30px;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard .footer .right .header{
+        height:30vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        padding-right:30px;
+    }
+
+    .dashboard .footer .right .header .tab{
+        margin-left:10px;
+        font-size:12pt; 
+        padding:10px;
+        color: rgb(181, 181, 181);
+        display:flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between; 
+    }
+
+    .dashboard .footer .right .header .active{
+        border-bottom:2px rgb(126,96,228) solid;
+        padding:5px; 
+        font-size:16pt; 
+        font-weight:bold;
+    }
+
+    .dashboard .footer .right .header .tab .number{
+        font-size:10pt;
+        background-color: rgb(238,238, 238);
+        width:30px;
+        text-align: center;
+        margin-right:5px;
+        border-radius: 3px;
+    }
+
+    .dashboard .footer .right .main{
+        height: 60vh;
+    }
+
+    .dashboard .footer .left {
+        height: 100%;
+        width: 37.4vw;
+        border-radius: 5px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .dashboard .footer .left .header{
+        border-bottom:1px silver solid;
+        height:30vh;
+        display: flex;
+        align-items: center;
+        padding-right:30px;
+    }
+
+    .dashboard .footer .left .header .text{
+        border-bottom:2px rgb(126,96,228) solid; 
+        padding:5px; 
+        font-size:16pt; 
+    }
+
+    .dashboard .footer .left .main{
+        width:100%;
+        height:60vh;
+    }
