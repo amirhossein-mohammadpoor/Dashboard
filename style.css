@@ -175,11 +175,12 @@ body {
     flex-direction: row;
     margin-left: 20px;
     overflow: hidden;
+    position: relative;
 }
 
 .dashboard .header .card .right {
     height: 100%;
-    width: 75%;
+    width: 100%;
     background-color: white;
     padding: 15px;
     display: flex;
@@ -196,6 +197,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
     transition: 0.5s;
 }
 
@@ -300,7 +304,7 @@ body {
 .dashboard .main .left .head .text{
     border-bottom:2px rgb(126,96,228) solid;
     padding:5px;
-    font-size:14pt;
+    font-size:10pt;
 }
 
 .dashboard .main .left .head button{
@@ -530,7 +534,7 @@ body {
 .dashboard .footer .message-box .head .text{
     border-bottom:2px rgb(126,96,228) solid; 
     padding:5px; 
-    font-size:12pt; 
+    font-size:10pt; 
 }
 
 .dashboard .footer .message-box .body{
